@@ -159,13 +159,15 @@ Answer + Highlighted Evidence
 
 ```text
 Project-Akshar/
-│── Module-1/
-│── Module-2/
-│── Module-3/
-│── Module-4/
-│── requirements.txt
+│── module1/
+│── module2/
+│── module3/
+│── module4/
+│── .gitignore
 │── README.md
-```
+│── project_workflow.md
+│── requirements.txt
+````
 
 ---
 
