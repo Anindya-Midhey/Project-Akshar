@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env
+venv/
+env/
+myenv/
+myenv1/
+
+# OS junk
+.DS_Store
+Thumbs.db
+.Rhistory
+
+# Logs
+*.log
+
+# Database/cache
+chroma_db/
+**/chroma_db/
+
+# Generated output
+out/
+output_extract/
+processed/
+uploads/
+
+# Node
+node_modules/
+
+# VS Code
+.vscode/
+
+# ML files
+*.pt
+*.pth
+*.ckpt

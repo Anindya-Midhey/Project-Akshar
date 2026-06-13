@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# module3/requirements.txt
+# Local layout detection + OCR pipeline (NO Sarvam API key required)
+#
+# Python: 3.10.x
+# Environment: use the project-wide myenv1 (already has all packages below)
+#
+# Install / verify:
+#   source ../myenv1/bin/activate
+#   pip install -r requirements.txt
+#
+# System dependency (macOS — one-time):
+#   brew install poppler
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core: Layout Detection + OCR ─────────────────────────────────────────────
+paddlepaddle>=3.3.1          # PaddlePaddle deep learning framework (CPU build)
+paddleocr>=3.4.0             # LayoutDetection + PaddleOCR engine
+paddlex>=3.4.3               # PaddleX model backend (auto-installed by paddleocr)
+
+# ── PDF Loading ───────────────────────────────────────────────────────────────
+pdf2image>=1.17.0            # PDF → PIL conversion (requires system poppler)
+
+# ── Image Processing ─────────────────────────────────────────────────────────
+opencv-python-headless>=4.10.0  # OpenCV (no GUI)
+opencv-contrib-python>=4.10.0   # OpenCV extra modules (required by paddleocr)
+Pillow>=11.0.0               # PIL image handling
+numpy>=2.0.0                 # Numerical arrays
+
+# ── Geometry / Utilities ─────────────────────────────────────────────────────
+shapely>=2.0.0               # Polygon geometry (used by paddlex internally)
+tqdm>=4.60.0                 # Progress bars
+
+# ── Fallback text extractor ───────────────────────────────────────────────────
+PyMuPDF>=1.20.0              # Used as fallback if paddleocr pipeline fails
