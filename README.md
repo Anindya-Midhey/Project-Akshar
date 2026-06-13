@@ -176,8 +176,8 @@ Project-Akshar/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/project-akshar.git
-cd project-akshar
+git clone https://github.com/Anindya-Midhey/Project-Akshar.git
+cd Project-Akshar
 ```
 
 ### Create Conda Environment
